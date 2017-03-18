@@ -12,19 +12,14 @@ import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.juborajsarker.touchandlearn.ActivityAboutMe;
 import com.juborajsarker.touchandlearn.MainActivity;
 import com.juborajsarker.touchandlearn.R;
 
 public class ActivityPoems extends AppCompatActivity {
-
-    int count = 0;
-    InterstitialAd mInterstitialAd;
 
     ImageView twinckle, abc, kathbirali;
     VideoView videoView;
@@ -83,8 +78,6 @@ public class ActivityPoems extends AppCompatActivity {
 
     public void twinckle(View view) {
 
-        count++;
-
 
         String videoPath = "android.resource://com.juborajsarker.touchandlearn/" + R.raw.poem_twinkle_twinkle_little_star;
         Uri uri = Uri.parse(videoPath);
@@ -94,35 +87,10 @@ public class ActivityPoems extends AppCompatActivity {
         videoView.start();
 
 
-        if (count == 3){
-
-
-            mInterstitialAd = new InterstitialAd(this);
-            mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
-
-            AdRequest adRequest = new AdRequest.Builder().addTestDevice("2BA46C54FD47FD80CBBAD95AE0F70E1A").build();
-            mInterstitialAd.loadAd(adRequest);
-
-            mInterstitialAd.setAdListener(new AdListener() {
-                public void onAdLoaded() {
-                    showInterstitial();
-                }
-            });
-
-
-
-
-            count = 0;
-
-        }
-
-
 
     }
 
     public void abc(View view) {
-
-        count++;
 
 
         String videoPath = "android.resource://com.juborajsarker.touchandlearn/" + R.raw.poem_abc;
@@ -132,34 +100,10 @@ public class ActivityPoems extends AppCompatActivity {
         mediaC.setAnchorView(videoView);
         videoView.start();
 
-        if (count == 3){
-
-
-            mInterstitialAd = new InterstitialAd(this);
-            mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
-
-            AdRequest adRequest = new AdRequest.Builder().addTestDevice("2BA46C54FD47FD80CBBAD95AE0F70E1A").build();
-            mInterstitialAd.loadAd(adRequest);
-
-            mInterstitialAd.setAdListener(new AdListener() {
-                public void onAdLoaded() {
-                    showInterstitial();
-                }
-            });
-
-
-
-
-            count = 0;
-
-        }
-
     }
 
     public void kathbirali(View view) {
 
-
-        count++;
 
         String videoPath = "android.resource://com.juborajsarker.touchandlearn/" + R.raw.poem_kathbirali;
         Uri uri = Uri.parse(videoPath);
@@ -169,36 +113,6 @@ public class ActivityPoems extends AppCompatActivity {
         videoView.start();
 
 
-        if (count == 3){
-
-
-            mInterstitialAd = new InterstitialAd(this);
-            mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen1));
-
-            AdRequest adRequest = new AdRequest.Builder().addTestDevice("2BA46C54FD47FD80CBBAD95AE0F70E1A").build();
-            mInterstitialAd.loadAd(adRequest);
-
-            mInterstitialAd.setAdListener(new AdListener() {
-                public void onAdLoaded() {
-                    showInterstitial();
-                }
-            });
-
-
-
-
-            count = 0;
-
-        }
-
-    }
-
-
-
-    private void showInterstitial() {
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
     }
 
 
