@@ -22,26 +22,66 @@
             android:value="@integer/google_play_services_version" />
 
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bengali_activity.BengaliAlphabeticActivity1" />
-        <activity android:name=".bengali_activity.BengaliAlphabeticActivity2" />
-        <activity android:name=".bengali_activity.BengaliAlphabeticActivity3" />
-        <activity android:name=".bengali_activity.BengaliNumberActivity" />
-        <activity android:name=".bengali_activity.BengaliVowelActivity" />
-        <activity android:name=".english_activity.EnglishAlphabeticActivity1" />
-        <activity android:name=".english_activity.EnglishAlphabeticActivity2" />
-        <activity android:name=".english_activity.EnglishNumberActivity" />
-        <activity android:name=".poems_activity.ActivityPoems" />
+
+
+        <activity
+            android:name=".bengali_activity.BengaliAlphabeticActivity1"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".bengali_activity.BengaliAlphabeticActivity2"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".bengali_activity.BengaliAlphabeticActivity3"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".bengali_activity.BengaliNumberActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".bengali_activity.BengaliVowelActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".english_activity.EnglishAlphabeticActivity1"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".english_activity.EnglishAlphabeticActivity2"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".english_activity.EnglishNumberActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".poems_activity.ActivityPoems"
+            android:label="Poems"
+            android:screenOrientation="portrait" />
 
 
         <activity android:name=".ActivityAboutMe"
-            android:label="About Me">
+            android:label="About Me"
+            android:screenOrientation="portrait">
 
         </activity>
 
