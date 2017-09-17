@@ -3,17 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/settingsMenu"
-        android:onClick="home"
-        android:orderInCategory="1"
-        android:title="Home"
-        app:showAsAction="never" />
-
-
-    <item
         android:id="@+id/rate_app"
         android:onClick="rateThisApp"
-        android:orderInCategory="2"
+        android:orderInCategory="1"
         android:title="Rate This App"
         app:showAsAction="never" />
 
@@ -21,7 +13,7 @@
     <item
         android:id="@+id/share_app"
         android:onClick="shareThisApp"
-        android:orderInCategory="3"
+        android:orderInCategory="2"
         android:title="Share This App"
         app:showAsAction="never" />
 
@@ -29,15 +21,16 @@
     <item
         android:id="@+id/more_apps"
         android:onClick="moreApps"
-        android:orderInCategory="4"
+        android:orderInCategory="3"
         android:title="More Apps"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/about"
         android:onClick="aboutMe"
-        android:orderInCategory="5"
+        android:orderInCategory="4"
         android:title="About"
         app:showAsAction="never" />
+
 
 </menu>
