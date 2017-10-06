@@ -37,7 +37,7 @@ public class EnglishNumberActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
 
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-5809082953640465/9002569621");
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-5809082953640465/2732139313");
         AdView mAdView = (AdView) findViewById(R.id.adView9);
         AdRequest adRequest = new AdRequest.Builder().addTestDevice("93448558CC721EBAD8FAAE5DA52596D3").build(); //add test device
 
